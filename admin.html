@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELOXI_MISSION_CONTROL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body class="admin-body">
+    <div class="admin-container">
+        <header class="admin-header">
+            <div>
+                <span class="section-label">LIVE_UPLINK_FEED</span>
+                <h1>MISSION_CONTROL</h1>
+            </div>
+            <button id="logoutBtn">TERMINATE_SESSION</button>
+        </header>
+
+        <div style="margin-bottom: 20px; border-left: 2px solid #87CEEB; padding-left: 15px;">
+        <span id="leadCounter" style="font-family: monospace; color: #87CEEB; font-size: 0.8rem; font-weight: bold;">
+        INITIALIZING_SCAN...
+       </span>
+   </div>
+
+        <div class="glass-card table-wrapper">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th style="width: 15%;">TIMESTAMP</th>
+                        <th style="width: 20%;">INSTITUTION</th>
+                        <th style="width: 15%;">WHATSAPP</th>
+                        <th style="width: 10%;">BUDGET</th>
+                        <th style="width: 25%;">PROJECT_GOAL</th>
+                        <th style="width: 15%;">ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody id="inquiryTableBody">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="admin-logic.js"></script>
+</body>
+</html>

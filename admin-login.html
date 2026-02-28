@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELOXI_ADMIN_AUTH</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body class="auth-page">
+    <div class="glass-card auth-box">
+        <span class="section-label">SECURE_ACCESS_REQUIRED</span>
+        <h2>ADMIN_TERMINAL</h2>
+        
+        <form id="loginForm">
+            <div class="field-wrap">
+                <label>OPERATOR_EMAIL</label>
+                <input type="email" id="adminEmail" required>
+            </div>
+            <div class="field-wrap">
+                <label>ACCESS_KEY</label>
+                <input type="password" id="adminPass" required>
+            </div>
+            <button type="submit" class="kinetic-btn">AUTHORIZE_UPLINK</button>
+        </form>
+        <p id="authError" style="color: #ff4444; font-size: 0.7rem; margin-top: 15px; display: none;"></p>
+    </div>
+
+    <script type="module" src="admin-auth.js"></script>
+</body>
+</html>
