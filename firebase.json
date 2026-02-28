@@ -1,0 +1,9 @@
+{
+  "hosting": {
+    "public": ".",
+    "rewrites": [
+      { "source": "/login", "destination": "/login.html" },
+      { "source": "/dashboard", "destination": "/admin.html" }
+    ]
+  }
+}
